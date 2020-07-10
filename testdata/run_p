@@ -1,0 +1,13 @@
+#! /bin/bash
+
+F=${1}
+shift
+N=${1:-50}
+
+for i in `ls cache/${F}_*.data | sed "s/.data//" `; do ./exp_p.py $i $N > $i.pvalues  ; done
+
+grep "^1e-06" cache/${F}_*.pvalues | awk '{print $3}' | ./avg.py
+grep "^1e-06" cache/${F}_*.pvalues | awk '{print $4}' | ./avg.py
+grep "^1e-06" cache/${F}_*.pvalues | awk '{print $5}' | ./avg.py
+grep "^1e-06" cache/${F}_*.pvalues | awk '{print $6}' | ./avg.py
+

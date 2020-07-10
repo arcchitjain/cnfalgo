@@ -1,0 +1,12 @@
+#! /bin/bash
+
+FILENAME=$1
+OFFSET=$2
+WIDTH=$3
+
+PART=$((OFFSET+WIDTH))
+head -n $PART $FILENAME | tail -n $WIDTH >> tmpdata.dat~
+
+gle -d pdf graph.gle
+
+open graph.pdf

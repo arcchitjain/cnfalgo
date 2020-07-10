@@ -1,0 +1,12 @@
+#! /bin/bash
+
+DATASET=${1?"You have to give a dataset name"}
+shift
+
+CL=${1:-`cat data/${DATASET} | awk '{print $1}' | sort -n | uniq -c | sort -nr | head -n 2 | awk '{print $2}' | tr '\n' ' ' | sed "s/ /,/"`}
+echo $CL
+
+for SEED in `cat seeds`;
+do
+	./gen.py data/$DATASET -c $CL -s 0 -S ${SEED} -o cache/${DATASET}_${SEED}.correct > cache/${DATASET}_${SEED}.data 
+done

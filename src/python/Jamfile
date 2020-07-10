@@ -1,0 +1,7 @@
+use-project boost
+        : /usr/local/boost ;
+
+import python ;
+
+
+python-extension cnfalgo : ../cnfminer/ExampleFilter.cpp ../cnfminer/RuleLearner.cpp ../cnfminer/RFreeRuleLearner.cpp ../cnfminer/FaultTolerantRuleLearner.cpp ../ruletrie/ft/ExampleStore.cpp ../exampletrie/ExampleTrie.cpp ../exampletrie/SimpleTrie.cpp ../metric/Metric.cpp ../filter/AttributeFilter.cpp ../language/Language.cpp ../language/SimpleLanguage.cpp ../lib/defaults.cpp ../lib/functions.cpp ../lib/message.cpp ../lib/profile.cpp ../math/ap.cpp ../math/gammaf.cpp ../ruletrie/ft/FTANode.cpp ../ruletrie/ft/FTRuleTrie.cpp ../ruletrie/ft/RuleNode.cpp ../ruletrie/ft/FTVNode.cpp ../ruletrie/nft/NFTANode.cpp ../ruletrie/nft/NFTRuleTrie.cpp ../ruletrie/nft/NFTVNode.cpp ../ruletrie/iterator/RuleIterator.cpp cnfalgo.cpp : <library>/boost/python//boost_python ; 

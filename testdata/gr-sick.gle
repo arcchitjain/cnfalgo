@@ -1,0 +1,29 @@
+
+size 16 12
+begin graph
+	scale 0.8 0.8
+
+data "exp.detect" d1=c1,c2
+
+	data "exp.correct" d2=c1,c2
+	xtitle "example between test sets"
+	data "exp.out"
+   x2axis off
+   y2axis off
+   yaxis log max 1
+   ytitle "ln p"
+   key position br offset 0.4 0.4
+
+d1 line impulses color darkgreen lwidth 0.02 lstyle 9 key "concept drift detected" 
+
+	d2 line impulses color black lwidth 0.02 lstyle 2 key "class transition"
+	
+	let d7 = 1
+
+d3 line color red lwidth 0.02 key "statistical (Mann-Whitney U)"
+d4 line color blue lwidth 0.02 key "frequentist (fixed 1)"
+d5 line color black lwidth 0.02 key "frequentist (dynamic)"
+let d8 = 0.001
+d8 line color black lwidth 0.01 lstyle 0
+fill x1,d8 color lightgreen xmin 207 xmax 262
+end graph

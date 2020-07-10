@@ -1,0 +1,1 @@
+exe cnfalgo : [ glob-tree *.cpp : .svn python ] ; 

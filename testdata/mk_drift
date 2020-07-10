@@ -1,0 +1,18 @@
+#! /bin/bash
+
+DATA=${1?"Requires one parameter"}
+
+if [ "$2" == "r" ];
+then
+	CLASSGEN=`awk '{ print $1 }' $DATA | sort -nr | uniq`
+else 
+	CLASSGEN=`awk '{ print $1 }' $DATA | sort -n | uniq`
+fi
+
+echo "" > ${DATA}.new
+
+for i in $CLASSGEN; 
+do
+	grep "^$i " $DATA | ./randomize.py | awk ' { $1="0"; print $0; }'  >> ${DATA}.new
+	wc -l ${DATA}.new | awk ' {print $1 }'
+done

@@ -1,0 +1,4 @@
+ 0 ==> DETECT @   330, p = 4.3545e-05, interval = [  329,   333], (0.0000, 100.0000), threshold = 0 ==> statistical (Mann-Whitney U) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   336, p = 9.5438e-04, interval = [  336,   337], (6.0000, 94.0000), threshold = 0 ==> statistical (Mann-Whitney U) 
+restarting (off) learner at example None

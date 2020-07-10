@@ -1,0 +1,2 @@
+cat seed | tr ' ' '\n' | tr [:upper:] [:lower:] | head -n 13 | sort | sed "s/[,.':;?\!]//g" | grep [:alpha:] | uniq > seeds
+

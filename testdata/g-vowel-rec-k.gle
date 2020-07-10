@@ -1,0 +1,42 @@
+
+size 16 12
+begin graph
+	scale 0.8 0.8
+	data "exp.detect" d1=c1,c2
+	data "exp.correct" d2=c1,c2
+	xtitle "example between test sets"
+	data "exp.out"
+   x2axis off
+   y2axis off
+   yaxis log 
+   ytitle "ln P(\^k_2 \geq k_2 )"
+   key position br offset 0.4 0.4
+!	d1 line impulses color darkgreen 
+!			lwidth 0.02 lstyle 9 key "concept drift detected"
+	d2 line impulses color black lwidth 0.02 lstyle 2 key "class transition"
+	
+   d3 line color red lwidth 0.02 key "fixed threshold (t=1)"
+   d4 line color blue lwidth 0.02 key "dynamic threshold"
+   
+	let d7 = 1
+
+let d5 = 0.001
+d5 line color black lwidth 0.01 lstyle 0
+fill x1,d7 color gray10 xmin 0 xmax 0
+fill x1,d7 color gray10 xmin 90 xmax 90
+fill x1,d7 color gray10 xmin 180 xmax 180
+fill x1,d7 color gray10 xmin 270 xmax 270
+fill x1,d7 color gray10 xmin 360 xmax 360
+fill x1,d7 color gray10 xmin 450 xmax 450
+fill x1,d7 color gray10 xmin 540 xmax 540
+fill x1,d7 color gray10 xmin 630 xmax 630
+fill x1,d7 color gray10 xmin 720 xmax 720
+fill x1,d7 color lightgreen xmin 70 xmax 130
+fill x1,d7 color lightgreen xmin 159 xmax 218
+fill x1,d7 color lightgreen xmin 246 xmax 311
+fill x1,d7 color lightgreen xmin 340 xmax 400
+fill x1,d7 color lightgreen xmin 430 xmax 489
+fill x1,d7 color lightgreen xmin 522 xmax 581
+fill x1,d7 color lightgreen xmin 616 xmax 667
+fill x1,d7 color lightgreen xmin 703 xmax 760
+end graph

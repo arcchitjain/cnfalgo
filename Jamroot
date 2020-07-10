@@ -1,0 +1,15 @@
+# use-project boost 
+#	: /usr/local/Cellar/boost ;
+
+project cnfalgo 
+#	: requirements <library>/boost/python//boost_python
+	: build-dir bin
+;
+
+# import python ;
+
+alias cnfexe : src//cnfalgo ;
+
+alias cnfpy : src/python//cnfalgo ;
+
+# python-extension cnfpy : src/cnfminer/ExampleFilter.cpp src/cnfminer/RuleLearner.cpp src/exampletrie/ExampleTrie.cpp src/exampletrie/SimpleTrie.cpp src/metric/Metric.cpp src/filter/AttributeFilter.cpp src/language/Language.cpp src/language/SimpleLanguage.cpp src/lib/defaults.cpp src/lib/functions.cpp src/lib/message.cpp src/lib/profile.cpp src/math/ap.cpp src/math/gammaf.cpp src/ruletrie/ANode.cpp src/ruletrie/NodeMap.cpp src/ruletrie/Rule.cpp src/ruletrie/RuleTrie.cpp src/ruletrie/VNode.cpp src/ruletrie/iterator/RuleIterator.cpp src/python/cnfalgo.cpp ; 

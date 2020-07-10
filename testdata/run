@@ -1,0 +1,33 @@
+#! /bin/bash
+
+DATASET=${1?error}
+
+
+S1=${2?error}
+S2=${3?error}
+
+N=`wc -l seeds`
+I=1
+M=${4?error}
+
+for SEED in `cat seeds`;
+do
+	./exp.py cache/${DATASET}_${SEED}.data -s 0 -o cache/${DATASET}_${SEED}_${M}_${S1}_${S2} -k 2 -P 0.001 -m $M -s -1 $S1 -2 $S2 > cache/${DATASET}_${SEED}_${M}_${S1}_${S2}.log
+
+	if [ $? -ne 0 ];
+	then
+		exit 1
+	fi
+
+	./score.py -1 ${S1} -2 ${S2} cache/${DATASET}_${SEED} cache/${DATASET}_${SEED}_${M}_${S1}_${S2} > cache/${DATASET}_${SEED}_${M}_${S1}_${S2}.score
+	
+
+        if [ $? -ne 0 ];
+        then
+                exit 1
+        fi
+
+
+	echo "$I of $N"
+	I=$((I+1)) 
+done

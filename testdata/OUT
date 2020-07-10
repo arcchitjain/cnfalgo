@@ -1,0 +1,266 @@
+ 0 ==> DETECT @   330, p = 8.1745e-11, interval = [  320,   345], (0.0000, 19.0000), threshold = 3 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   329, p = 3.7157e-12, interval = [  318,   347], (0.0000, 20.0000), threshold = 4 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   318, p = 4.7942e-04, interval = [  318,   319], (0.0000, 9.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  320,   343], (1.0000, 20.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  320,   345], (1.0000, 20.0000), threshold = 6 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  318,   343], (0.0000, 20.0000), threshold = 14 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  322,   343], (0.0000, 20.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   315, p = 4.7942e-04, interval = [  315,   316], (0.0000, 9.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  317,   343], (0.0000, 20.0000), threshold = 20 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 1.6390e-08, interval = [  322,   335], (1.0000, 18.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   378, p = 7.9796e-04, interval = [  378,   379], (2.0000, 12.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   380, p = 7.9796e-04, interval = [  380,   381], (2.0000, 12.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 1.5643e-09, interval = [  323,   344], (1.0000, 19.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  316,   340], (1.0000, 20.0000), threshold = 5 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   341, p = 7.9796e-04, interval = [  341,   342], (2.0000, 12.0000), threshold = 8 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   343, p = 7.9796e-04, interval = [  343,   344], (2.0000, 12.0000), threshold = 9 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  317,   347], (1.0000, 20.0000), threshold = 9 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  317,   343], (0.0000, 20.0000), threshold = 17 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 8.5832e-10, interval = [  324,   344], (2.0000, 20.0000), threshold = 10 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  321,   343], (1.0000, 20.0000), threshold = 32 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   125, p = 7.9796e-04, interval = [  125,   127], (2.0000, 12.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   131, p = 7.9796e-04, interval = [  131,   132], (2.0000, 12.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  318,   344], (0.0000, 20.0000), threshold = 9 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  319,   343], (1.0000, 20.0000), threshold = 9 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @    93, p = 6.4704e-04, interval = [   93,    94], (8.0000, 18.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   329, p = 4.7942e-04, interval = [  329,   330], (0.0000, 9.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 1.6480e-04, interval = [  329,   331], (0.0000, 10.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  319,   343], (0.0000, 20.0000), threshold = 9 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @    33, p = 4.6250e-04, interval = [   33,    34], (1.0000, 11.0000), threshold = 16 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @    39, p = 2.2506e-04, interval = [   39,    41], (7.0000, 18.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  319,   344], (0.0000, 20.0000), threshold = 17 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  319,   343], (0.0000, 20.0000), threshold = 12 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  318,   343], (1.0000, 20.0000), threshold = 10 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  318,   345], (0.0000, 20.0000), threshold = 7 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @    47, p = 9.4523e-04, interval = [   47,    48], (7.0000, 17.0000), threshold = 8 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   332, p = 7.8030e-11, interval = [  321,   344], (1.0000, 20.0000), threshold = 3 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 8.1745e-11, interval = [  320,   344], (0.0000, 19.0000), threshold = 6 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  319,   343], (0.0000, 20.0000), threshold = 10 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 8.1745e-11, interval = [  320,   344], (0.0000, 19.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @    32, p = 4.7942e-04, interval = [   32,    33], (0.0000, 9.0000), threshold = 54 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 8.5832e-10, interval = [  316,   346], (2.0000, 20.0000), threshold = 8 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  319,   343], (0.0000, 20.0000), threshold = 7 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   323, p = 3.6224e-04, interval = [  323,   324], (3.0000, 14.0000), threshold = 4 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   325, p = 3.6224e-04, interval = [  325,   326], (3.0000, 14.0000), threshold = 5 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 2.7243e-06, interval = [  327,   335], (5.0000, 19.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   329, p = 1.5643e-09, interval = [  322,   341], (1.0000, 19.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  319,   344], (0.0000, 20.0000), threshold = 20 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  317,   344], (0.0000, 20.0000), threshold = 17 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   455, p = 4.6250e-04, interval = [  455,   456], (1.0000, 11.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  316,   343], (0.0000, 20.0000), threshold = 8 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  317,   342], (1.0000, 20.0000), threshold = 11 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @    26, p = 8.3898e-04, interval = [   25,    27], (12.0000, 20.0000), threshold = 14 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   331, p = 1.4982e-07, interval = [  327,   339], (2.0000, 18.0000), threshold = 4 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  321,   346], (1.0000, 20.0000), threshold = 16 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   318, p = 4.7942e-04, interval = [  318,   319], (0.0000, 9.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 1.5684e-08, interval = [  321,   340], (2.0000, 19.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   332, p = 5.9882e-07, interval = [  317,   337], (4.0000, 19.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 8.5832e-10, interval = [  321,   342], (2.0000, 20.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 8.5832e-10, interval = [  319,   342], (2.0000, 20.0000), threshold = 7 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  319,   343], (0.0000, 20.0000), threshold = 4 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   546, p = 4.7942e-04, interval = [  546,   547], (0.0000, 9.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @    81, p = 1.5453e-04, interval = [   79,    82], (1.0000, 12.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  318,   343], (0.0000, 20.0000), threshold = 17 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  319,   346], (0.0000, 20.0000), threshold = 14 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  319,   343], (0.0000, 20.0000), threshold = 17 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  321,   343], (0.0000, 20.0000), threshold = 5 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  319,   343], (0.0000, 20.0000), threshold = 3 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  318,   342], (1.0000, 20.0000), threshold = 15 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   331, p = 4.3995e-06, interval = [  327,   336], (0.0000, 13.0000), threshold = 3 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @    28, p = 8.3898e-04, interval = [   27,    32], (12.0000, 20.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  320,   345], (0.0000, 20.0000), threshold = 6 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   346, p = 3.1462e-04, interval = [  346,   348], (11.0000, 20.0000), threshold = 15 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  318,   342], (1.0000, 20.0000), threshold = 8 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  321,   349], (0.0000, 20.0000), threshold = 7 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   351, p = 8.3898e-04, interval = [  351,   352], (12.0000, 20.0000), threshold = 22 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   328, p = 1.3076e-05, interval = [  324,   337], (1.0000, 14.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  319,   343], (1.0000, 20.0000), threshold = 13 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.9483e-08, interval = [  319,   342], (4.0000, 20.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  319,   343], (0.0000, 20.0000), threshold = 8 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  318,   343], (1.0000, 20.0000), threshold = 6 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   348, p = 7.9796e-04, interval = [  348,   351], (2.0000, 12.0000), threshold = 39 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 4.3995e-06, interval = [  322,   332], (0.0000, 13.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   333, p = 7.9796e-04, interval = [  333,   334], (2.0000, 12.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   328, p = 7.5206e-09, interval = [  317,   339], (0.0000, 17.0000), threshold = 5 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 8.5832e-10, interval = [  324,   345], (2.0000, 20.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 8.1745e-11, interval = [  322,   343], (0.0000, 19.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   331, p = 5.3161e-05, interval = [  329,   333], (0.0000, 11.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 1.4982e-07, interval = [  326,   341], (2.0000, 18.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   335, p = 7.8030e-11, interval = [  321,   348], (1.0000, 20.0000), threshold = 7 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   329, p = 4.7003e-08, interval = [  322,   335], (0.0000, 16.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   340, p = 2.2506e-04, interval = [  339,   342], (7.0000, 18.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 1.4982e-07, interval = [  325,   335], (2.0000, 18.0000), threshold = 4 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   321, p = 7.9796e-04, interval = [  321,   322], (2.0000, 12.0000), threshold = 4 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   329, p = 6.7873e-07, interval = [  324,   337], (1.0000, 16.0000), threshold = 9 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  319,   344], (0.0000, 20.0000), threshold = 34 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @    31, p = 9.9573e-05, interval = [   31,    33], (5.0000, 17.0000), threshold = 10 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @    37, p = 3.2580e-04, interval = [   37,    39], (6.0000, 17.0000), threshold = 10 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @    40, p = 3.7518e-05, interval = [   40,    42], (7.0000, 19.0000), threshold = 6 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 8.1745e-11, interval = [  319,   339], (0.0000, 19.0000), threshold = 6 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   341, p = 9.3032e-04, interval = [  341,   342], (10.0000, 19.0000), threshold = 4 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   329, p = 1.5643e-09, interval = [  322,   340], (1.0000, 19.0000), threshold = 4 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   329, p = 4.7574e-06, interval = [  325,   341], (4.0000, 18.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   342, p = 3.1462e-04, interval = [  342,   344], (11.0000, 20.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 1.5643e-09, interval = [  321,   339], (1.0000, 19.0000), threshold = 5 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  321,   343], (1.0000, 20.0000), threshold = 4 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  318,   342], (0.0000, 20.0000), threshold = 36 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 1.5684e-08, interval = [  325,   345], (2.0000, 19.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 1.9741e-07, interval = [  326,   343], (5.0000, 20.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 8.5832e-10, interval = [  321,   342], (2.0000, 20.0000), threshold = 16 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   379, p = 2.2506e-04, interval = [  378,   380], (7.0000, 18.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  317,   343], (0.0000, 20.0000), threshold = 20 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  319,   344], (0.0000, 20.0000), threshold = 17 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @    29, p = 3.2580e-04, interval = [   29,    30], (6.0000, 17.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  317,   343], (0.0000, 20.0000), threshold = 17 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  319,   343], (0.0000, 20.0000), threshold = 18 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   329, p = 8.1745e-11, interval = [  318,   341], (0.0000, 19.0000), threshold = 10 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  321,   345], (1.0000, 20.0000), threshold = 5 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @    66, p = 3.6224e-04, interval = [   66,    67], (3.0000, 14.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   328, p = 9.4007e-10, interval = [  318,   343], (0.0000, 18.0000), threshold = 17 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   121, p = 3.6224e-04, interval = [  121,   122], (3.0000, 14.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.9483e-08, interval = [  323,   343], (4.0000, 20.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   353, p = 1.6480e-04, interval = [  352,   354], (0.0000, 10.0000), threshold = 34 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  319,   344], (0.0000, 20.0000), threshold = 3 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 6.5805e-09, interval = [  321,   342], (3.0000, 20.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 9.4007e-10, interval = [  319,   341], (0.0000, 18.0000), threshold = 12 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 1.5684e-08, interval = [  321,   339], (2.0000, 19.0000), threshold = 4 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   316, p = 1.6480e-04, interval = [  315,   317], (0.0000, 10.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  318,   343], (0.0000, 20.0000), threshold = 9 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 7.8030e-11, interval = [  316,   343], (1.0000, 20.0000), threshold = 10 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   329, p = 3.7157e-12, interval = [  320,   342], (0.0000, 20.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  322,   343], (0.0000, 20.0000), threshold = 1 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   330, p = 3.7157e-12, interval = [  322,   343], (0.0000, 20.0000), threshold = 2 ==> bayesian (dynamic) 
+restarting (off) learner at example None
+ 0 ==> DETECT @   329, p = 3.7157e-12, interval = [  318,   343], (0.0000, 20.0000), threshold = 6 ==> bayesian (dynamic) 
+restarting (off) learner at example None
