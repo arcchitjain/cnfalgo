@@ -53,10 +53,34 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "cc"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "mv"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/arcchit/Downloads/cnfalgo/testdata/data/train_full"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-t"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "/Users/arcchit/Downloads/cnfalgo/testdata/data/test"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-f"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-d"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/arcchit/Downloads/cnfalgo/testdata/data/missing"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

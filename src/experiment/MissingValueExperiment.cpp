@@ -6,9 +6,13 @@
 using namespace cnf;
 
 score_result MissingValueExperiment::test() {
+    const std::string& testFile = getTestfile();
+    std::cout << "Test File\t:\t" << str(testFile) << std::endl;
+    ExampleReader& data = *createReader(testFile);
 	
-	ExampleReader& data = *createReader(getTestfile());
-	FileReader& del = *(new FileReader(getDelfile()));
+    const std::string& delFile = getDelfile();
+    std::cout << "Delete File\t:\t" << str(delFile) << std::endl;
+    FileReader& del = *(new FileReader(delFile));
 			
 	data.open();
 	
@@ -25,7 +29,7 @@ score_result MissingValueExperiment::test() {
 			del.readline(deletion);
 		}
 		
-		if (s % 10 == 0) std::cout << "evaluating example: "<< s << std::endl;
+		if (s % 10 == 0) std::cout << "Evaluating example: "<< s << std::endl;
 		
 		result += test_example(example, s, deletion);
 		example.clear();
@@ -62,7 +66,7 @@ bool MissingValueExperiment::scoreExample(std::vector<int>& example, const int* 
 		// example is complete
 		// do the actual scoring here
 		
-		//cout << "constructed example: " << str(example) << endl;
+		std::cout << "Constructed example\t:\t" << str(example) << std::endl;
 				
 		double score = getMetric().calculate(example,getTheory().getRules());
 		//if (score <= correct) {
@@ -94,7 +98,7 @@ bool MissingValueExperiment::scoreExample(std::vector<int>& example, const int* 
 		//	cout << "NOMINAL ATTRIBUTE " << str(values) << endl;
 			// finds the position of any of the values in value in the example 
 			// puts the value that was found first in values
-			// in the end scores[0] will give the score of the original value
+			// in the end, scores[0] will give the score of the original value
 			int position = findValue(example,values);
 			
 			//cout << del[0] << " ==> nominal" << endl;
@@ -146,24 +150,24 @@ int MissingValueExperiment::findValue(const std::vector<int>& example, int value
 
 score_result MissingValueExperiment::test_example(const std::vector<int>& example, int s, const std::vector<int>& deletion) {
 	if (deletion.size() <= 1 || deletion[0] != s) return 1;
-	//cout << "ORIGINAL " << str(example) << endl;
-	//cout << "deleted columns: " << str(deletion) << endl;
+	std::cout << "Original Row:\t" << str(example) << std::endl;
+	std::cout << "Deleted cols:\t" << str(deletion) << std::endl;
 	
-	//cout << deletion[0] << " - " << deletion[1] << endl;
-	
-	// classes now contains all the possible classes as found in the training data
-	// class_dist contains the distribution of the training examples over these classes
 	std::vector<double> scores;
 	std::vector<int> counts;
 	double correct = getMetric().calculate(example,getTheory().getRules());
 	if (scoreExample(const_cast<std::vector<int>& >(example),&deletion[1],static_cast<int>(deletion.size()-1),scores,0,counts, correct)) {
-		return 0;
+        std::cout << deletion[1] << " --> ";
+        // for (int i = 0; i< example.size(); i++) std::cout << example[i] << " "; std::cout << std::endl;
+        for (int i = 0; i< scores.size(); i++) std::cout << scores[i] << " "; std::cout << std::endl;
+        return 0;
 	} else {
+        std::cout << deletion[1] << " --> ";
+        // for (int i = 0; i< example.size(); i++) std::cout << example[i] << " "; std::cout << std::endl;
+        for (int i = 0; i< scores.size(); i++) std::cout << scores[i] << " "; std::cout << std::endl;
 		return getScorer().calculate_score(scores,counts);
 	}
-	//cout << deletion[1] << " --> ";
-	//for (int i = 0; i< example.size(); i++) std::cout << example[i] << " "; std::cout << std::endl;
-	//for (int i = 0; i< scores.size(); i++) std::cout << scores[i] << " "; std::cout << std::endl; 
+	
 	
 	
 	

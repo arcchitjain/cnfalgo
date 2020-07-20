@@ -123,9 +123,9 @@ namespace cnf
 	}
 	
 	bool FTRuleTrie::findFailing(const int* rule, unsigned int length, RuleList* rules, int maxl,unsigned int split) const {
-#if VERBOSE > 2
-		std::cout << "FTRuleTrie::findFailing([" << str(rule,length) << "]," << rules << ") " << this << " " << (hasChild() ? &getChild() : NULL) << std::endl; 
-#endif
+//#if VERBOSE > 2
+//		std::cout << "FTRuleTrie::findFailing([" << str(rule,length) << "]," << rules << ") " << this << " " << (hasChild() ? &getChild() : NULL) << std::endl; 
+//#endif
 		if (hasChild()) return getChild().findFailing(rule,length,rules,maxl,split);
 		else return false;
 	}

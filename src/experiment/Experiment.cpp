@@ -200,10 +200,10 @@ int Experiment::run() {
 	// run training phase
 	score_result tr_err = train();
 	
-	std::cout << "\nTime Usage: " << timeUsage() << std::endl;
-    std::cout << "MaxK: " << getMaxK() << std::endl;
-    std::cout << "Training Result: Standard " << tr_err.standard << ", NoYes " << tr_err.noyes << ", YesNo " << tr_err.yesno << std::endl;
-    std::cout << "Theory Size: " << getTheorySize() << std::endl;
+	std::cout << "\nTime Usage\t: " << timeUsage() << std::endl;
+    std::cout << "MaxK\t\t: " << getMaxK() << std::endl;
+    std::cout << "Train Score (always 0): Standard " << tr_err.standard << ", NoYes " << tr_err.noyes << ", YesNo " << tr_err.yesno << std::endl;
+    std::cout << "Theory Size\t: " << getTheorySize() << std::endl;
 	
 	if (hasTestfile()) {
 		
@@ -211,7 +211,7 @@ int Experiment::run() {
 		for (int kv=getMaxK(); kv >= getMinK(); kv--) {
 			reduce_to(kv);	// remove all rules of length > kv
 			score_result ts_err = test();
-			std::cout << "RESULT: " << kv <<  " " << getMetric().getName() << " " << getScorer().getName() << ", Standard " << ts_err.standard << ", NoYes " << ts_err.noyes << ", YesNo " << ts_err.yesno << std::endl;
+			std::cout << "RESULT: k = " << kv <<  ", Metric = " << getMetric().getName() << " - " << getScorer().getName() << ", Test Score: Standard " << ts_err.standard << ", NoYes " << ts_err.noyes << ", YesNo " << ts_err.yesno << std::endl;
 		}
 	}
 	

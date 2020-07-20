@@ -31,7 +31,7 @@ void RuleLearner::initialize() {
 
 double RuleLearner::process_example(const std::vector<int>& example, int ex_id) {
 #ifdef VERBOSE 
-	std::cout << "\nRuleLearner::process_example([" << str(example) << "])" << std::endl;
+	std::cout << "RuleLearner::process_example([" << str(example) << "])" << std::endl;
 #endif
 	
 	profile::start_timer(PROF_TOTAL);
@@ -52,7 +52,10 @@ double RuleLearner::process_example(const std::vector<int>& example, int ex_id) 
 	profile::stop_timer(PROF_FINDFAILING);
 
 #if VERBOSE > 2
-	std::cout << "Found " << frules.size() << " failing rules" << std::endl;
+    if (frules.size() > 0) {
+        std::cout << "Found " << frules.size() << " failing rules" << std::endl;
+    }
+	
 	
 	for (unsigned int i=0; i<frules.size(); ++i) {
 		std::vector<int> rr; frules[i]->getRule(rr);
@@ -152,7 +155,7 @@ double RuleLearner::process_example(const std::vector<int>& example, int ex_id) 
 					profile::start_timer(PROF_ADDRULE);
 					
 #ifdef VERBOSE 
-					std::cout << "Updating Rule " << str(rule) << " with extensions: ";
+					std::cout << "Updating rule: '" << str(rule) << "'\twith extensions: ";
 #endif
 					
 					for (unsigned int i=0; i<ruleext.size(); i++) {
@@ -200,5 +203,9 @@ double RuleLearner::process_example(const std::vector<int>& example, int ex_id) 
 	profile::stop_timer(PROF_TOTAL);
 	getExampleFilter().stream_buffer(ex_id, *this);
 	
+#if VERBOSE > 2
+    if (frules.size() > 0) std::cout << std::endl;
+#endif
+    
 	return result;
 }
