@@ -29,7 +29,7 @@ score_result MissingValueExperiment::test() {
 			del.readline(deletion);
 		}
 		
-		if (s % 10 == 0) std::cout << "Evaluating example: "<< s << std::endl;
+		if (s % 10 == 0) std::cout << "\nEvaluating example: "<< s << std::endl;
 		
 		result += test_example(example, s, deletion);
 		example.clear();
@@ -66,9 +66,10 @@ bool MissingValueExperiment::scoreExample(std::vector<int>& example, const int* 
 		// example is complete
 		// do the actual scoring here
 		
-		std::cout << "Constructed example\t:\t" << str(example) << std::endl;
+        double score = getMetric().calculate(example,getTheory().getRules());
+        
+		std::cout << "Constructed example\t:\t" << str(example) << "\t Score: " << score << std::endl;
 				
-		double score = getMetric().calculate(example,getTheory().getRules());
 		//if (score <= correct) {
 			scores.push_back(score);
 			counts.push_back(count);
@@ -148,23 +149,27 @@ int MissingValueExperiment::findValue(const std::vector<int>& example, int value
 	return static_cast<int>(-example.size()-1);
 }
 
+/// <#Description#>
+/// @param example <#example description#>
+/// @param s <#s description#>
+/// @param deletion <#deletion description#>
 score_result MissingValueExperiment::test_example(const std::vector<int>& example, int s, const std::vector<int>& deletion) {
 	if (deletion.size() <= 1 || deletion[0] != s) return 1;
-	std::cout << "Original Row:\t" << str(example) << std::endl;
+	std::cout << "\nOriginal Row:\t" << str(example) << std::endl;
 	std::cout << "Deleted cols:\t" << str(deletion) << std::endl;
 	
 	std::vector<double> scores;
 	std::vector<int> counts;
 	double correct = getMetric().calculate(example,getTheory().getRules());
 	if (scoreExample(const_cast<std::vector<int>& >(example),&deletion[1],static_cast<int>(deletion.size()-1),scores,0,counts, correct)) {
-        std::cout << deletion[1] << " --> ";
+        // std::cout << deletion[1] << " --> ";
         // for (int i = 0; i< example.size(); i++) std::cout << example[i] << " "; std::cout << std::endl;
-        for (int i = 0; i< scores.size(); i++) std::cout << scores[i] << " "; std::cout << std::endl;
+        // for (int i = 0; i< scores.size(); i++) std::cout << scores[i] << " "; std::cout << std::endl;
         return 0;
 	} else {
-        std::cout << deletion[1] << " --> ";
+        // std::cout << deletion[1] << " --> ";
         // for (int i = 0; i< example.size(); i++) std::cout << example[i] << " "; std::cout << std::endl;
-        for (int i = 0; i< scores.size(); i++) std::cout << scores[i] << " "; std::cout << std::endl;
+        // for (int i = 0; i< scores.size(); i++) std::cout << scores[i] << " "; std::cout << std::endl;
 		return getScorer().calculate_score(scores,counts);
 	}
 	
