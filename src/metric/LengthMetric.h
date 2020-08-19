@@ -28,7 +28,7 @@ public:
 			print_message(1,str(rules.size()) + " - ");
 			for (int i=0; i<=k; i++) {
 				print_message(1,str(rl[i]) + " ");	
-				int div = theory.numberOfRules(i);
+				int div = theory.numberOfRules(i);  // div contains the total number of rules of length 'i' in the theory 
 				if (div == 0 && rl[i] != 0) print_warning("Non existing rule failed");
 				else if (div == 0) rl[i] = 0;
 				else rl[i] = rl[i] / div;

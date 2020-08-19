@@ -40,6 +40,7 @@ namespace cnf {
 			
 			std::string testfile_;
 			
+            std::string outputfile_;
 			
 			virtual int readBFilter(std::map<std::string,std::string> pars) {
 				std::string bfil;
@@ -75,6 +76,7 @@ namespace cnf {
 			virtual bool initialize(std::map<std::string,std::string>& pars);
 			
 			virtual void prepare_command_map(std::map<std::string,std::string>& pars);
+        
 			
 			/* Get-Set methods */
 			virtual inline int getK() const { return maxk_; }
@@ -104,6 +106,10 @@ namespace cnf {
 			
 			virtual inline const std::string& getTrainfile() const { return trainfile_; }
 			virtual inline void setTrainfile(const std::string& trainfile) { trainfile_ = trainfile; }
+        
+            virtual const std::string& getOutfile() const { return outputfile_; }
+            virtual void setOutfile(const std::string& outfile) { outputfile_ = outfile; }
+            virtual inline bool hasOutfile() const { return outputfile_ != ""; }
 					
 			virtual int getMaxK() const = 0;		
 					
@@ -149,6 +155,8 @@ namespace cnf {
 			}
 			
 			virtual void print_info() {}
+        
+            virtual void print_theory_to_file(std::string outFile) {};
 	};
 
 }

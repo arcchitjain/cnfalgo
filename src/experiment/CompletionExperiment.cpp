@@ -55,3 +55,25 @@ void cnf::CompletionExperiment::print_info() {
     getTheory().printInfo();
 //	RuleTrieProfiler::printRuleTrieProfile(getTheory().getRules());
 }
+
+void cnf::CompletionExperiment::print_theory_to_file(std::string outfile) {
+    
+    
+    std::ofstream out;
+    out.open(outfile);
+    
+    std::cout << "Outputting Learned theory to output file\t: " << outfile << std::endl;
+    
+    // In the first line, enter number of rules in the theory
+    out << getTheory().getRules().size() << std::endl;
+    {
+        RuleList rules; getTheory().getRules().listRules(&rules);
+        for (unsigned int i=0; i<rules.size() ; ++i) {
+            out << rules[i]->toString() << std::endl;
+        }
+    }
+    
+    out.close();
+    
+}
+

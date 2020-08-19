@@ -114,6 +114,8 @@ bool Experiment::initialize(std::map<std::string,std::string>& cmd) {
 	
 	setTestfile(read_param_default("t","-testdata",cmd,""));	
 	
+    setOutfile(read_param_default("o","-output",cmd,""));
+    
 	{
 		Metric* m = createMetric(read_param_default("m","-metric",cmd,DEFAULT_METRIC),read_param("-detailed",cmd));
 		if (m == NULL) return false;
@@ -160,6 +162,8 @@ void Experiment::prepare_command_map(std::map<std::string,std::string>& pars) {
 	//pars.insert(std::make_pair("-all","NULL"));
 	pars.insert(std::make_pair("-detailed","NULL")); // output detailed scoring information
 	pars.insert(std::make_pair("-maxmem",""));
+    pars.insert(std::make_pair("o",""));                // output learned theory
+    pars.insert(std::make_pair("-output",""));
 }
 
 Metric* Experiment::createMetric(const std::string& metric,bool detailed) {
@@ -211,7 +215,7 @@ int Experiment::run() {
 		for (int kv=getMaxK(); kv >= getMinK(); kv--) {
 			reduce_to(kv);	// remove all rules of length > kv
 			score_result ts_err = test();
-			std::cout << "RESULT: k = " << kv <<  ", Metric = " << getMetric().getName() << " - " << getScorer().getName() << ", Test Score: Standard " << ts_err.standard << ", NoYes " << ts_err.noyes << ", YesNo " << ts_err.yesno << std::endl;
+			std::cout << "\nRESULT: k = " << kv <<  ", Metric = " << getMetric().getName() << " - " << getScorer().getName() << ", Test Score: Standard " << ts_err.standard << ", NoYes " << ts_err.noyes << ", YesNo " << ts_err.yesno << std::endl;
 		}
 	}
 	
@@ -219,6 +223,13 @@ int Experiment::run() {
 	
 	
 	profile::print_profile();
+    
+    
+    if (hasOutfile()) {
+        const std::string& outFile = getOutfile();
+        std::cout << "Output File\t:\t" << str(outFile) << std::endl;
+        print_theory_to_file(outFile);
+    }
 	
 	return 0;
 }

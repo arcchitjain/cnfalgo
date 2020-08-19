@@ -61,7 +61,7 @@ public:
 	
 	void print_info();
 	
-
+    void print_theory_to_file(std::string outfile);
 };
 
 }
