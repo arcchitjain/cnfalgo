@@ -209,6 +209,12 @@ int Experiment::run() {
     std::cout << "Train Score (always 0): Standard " << tr_err.standard << ", NoYes " << tr_err.noyes << ", YesNo " << tr_err.yesno << std::endl;
     std::cout << "Theory Size\t: " << getTheorySize() << std::endl;
 	
+    if (hasOutfile() && !hasTestfile()) {
+        const std::string& outFile = getOutfile();
+        std::cout << "Output File\t:\t" << str(outFile) << std::endl;
+        print_theory_to_file(outFile);
+    }
+    
 	if (hasTestfile()) {
 		
 		// if mink_ == -1 -> getMinK() == getMaxK() and loop execute once
@@ -221,16 +227,8 @@ int Experiment::run() {
 	
 	print_info();
 	
-	
 	profile::print_profile();
     
-    
-    if (hasOutfile()) {
-        const std::string& outFile = getOutfile();
-        std::cout << "Output File\t:\t" << str(outFile) << std::endl;
-        print_theory_to_file(outFile);
-    }
-	
 	return 0;
 }
 
